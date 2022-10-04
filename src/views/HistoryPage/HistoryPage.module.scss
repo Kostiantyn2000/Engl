@@ -1,0 +1,22 @@
+.wrapper {
+  @apply mx-auto max-w-screen-xl   lg:py-4;
+}
+
+.title {
+  @apply mb-2;
+}
+
+.sectionCard {
+  @apply flex flex-wrap gap-6;
+}
+.card {
+  @apply mt-3;
+}
+
+.cardContent {
+  @apply flex flex-col gap-4 overflow-y-auto w-80 h-64 border-light-blue-500 border-solid border-4 p-6;
+}
+
+.cardBody {
+  @apply text-center;
+}

@@ -1,0 +1,27 @@
+.wrapper {
+  @apply mx-auto max-w-screen-xl   lg:py-4;
+}
+
+.cardItem {
+  @apply hover:bg-light-blue-700;
+}
+
+.list {
+  @apply flex gap-5 flex-wrap;
+}
+
+.cardBody {
+  @apply text-center;
+}
+
+.title {
+  @apply mb-2;
+}
+
+.subTitle {
+  @apply font-bold;
+}
+
+.images {
+  @apply w-5 h-5 mt-3  self-center;
+}

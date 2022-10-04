@@ -1,0 +1,11 @@
+.wrapper {
+  @apply mx-auto max-w-screen-xl   lg:py-4;
+}
+
+.buttons {
+  @apply flex gap-4 mt-3;
+}
+
+.button {
+  @apply hover:bg-light-blue-900;
+}

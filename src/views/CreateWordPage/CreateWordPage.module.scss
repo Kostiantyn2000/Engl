@@ -1,0 +1,15 @@
+.wrapper {
+  @apply mx-auto max-w-screen-xl    lg:py-4;
+}
+
+.form {
+  @apply mt-5;
+}
+
+.inputWrapper {
+  @apply flex;
+}
+
+.button {
+  @apply w-72 mt-5;
+}
