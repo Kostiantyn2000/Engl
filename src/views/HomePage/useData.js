@@ -1,28 +1,9 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { quizAction, vocabularyAction } from "../../store";
-import MockQuizRepository from "../../services/quizRepository";
 
 export const useData = () => {
   const dispatch = useDispatch();
-
-  const api = async () => {
-    try {
-      let data = await new MockQuizRepository().getElements();
-
-      if (data.length) {
-        dispatch(vocabularyAction.onFetchElements(data));
-        dispatch(vocabularyAction.onLoading(false));
-      }
-    } catch (error) {
-      console.log(error);
-      dispatch(vocabularyAction.onLoading(false));
-    }
-  };
-
-  useEffect(() => {
-    api();
-  }, []);
 
   const words = useSelector((state) => state.vocabulary.elements);
   const questions = useSelector((state) => state.vocabulary.questions);

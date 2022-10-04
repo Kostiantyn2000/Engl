@@ -13,8 +13,8 @@ export const useData = () => {
     dispatch(
       vocabularyAction.onAddElements({
         id: Math.random() * 300,
-        wordEn: valueEn,
-        wordUa: valueUa,
+        native: valueEn,
+        value: valueUa,
         isCheck: false,
       })
     );
