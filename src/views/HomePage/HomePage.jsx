@@ -16,6 +16,9 @@ export const HomePage = () => {
 
   return (
     <div className={styles.wrapper}>
+      <Typography variant="h3" color="blue">
+        To start the test you need to choose 10 words
+      </Typography>
       <ul className={styles.list}>
         {words.map(({ id, native, value, isCheck }) => {
           return (

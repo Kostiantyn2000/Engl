@@ -60,7 +60,9 @@ export const useData = () => {
       };
     });
 
-    dispatch(quizAction.onAddElements(newQuestions));
+    if (questions.length === 10) {
+      dispatch(quizAction.onAddElements(newQuestions));
+    }
   }, [questions, answers]);
 
   return { words, handleAddWordQuiz, handleToggleWords, isLoading };
