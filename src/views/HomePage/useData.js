@@ -65,5 +65,5 @@ export const useData = () => {
     }
   }, [questions, answers]);
 
-  return { words, handleAddWordQuiz, handleToggleWords, isLoading };
+  return { words, handleAddWordQuiz, handleToggleWords, isLoading, questions };
 };

@@ -6,7 +6,8 @@ import checkImage from "../../assets/images/check.png";
 import { Loading } from "../../components/forms";
 
 export const HomePage = () => {
-  const { words, handleAddWordQuiz, handleToggleWords, isLoading } = useData();
+  const { words, handleAddWordQuiz, handleToggleWords, isLoading, questions } =
+    useData();
 
   console.log(words);
 
@@ -17,7 +18,7 @@ export const HomePage = () => {
   return (
     <div className={styles.wrapper}>
       <Typography variant="h3" color="blue">
-        To start the test you need to choose 10 words
+        To start the test you need to choose 10 words / {questions.length}
       </Typography>
       <ul className={styles.list}>
         {words.map(({ id, native, value, isCheck }) => {
